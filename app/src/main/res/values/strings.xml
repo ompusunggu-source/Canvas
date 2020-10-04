@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CanvasBREE</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+    <string name="pencil">Press pencil button for create your signature.</string>
+    <string name="splashscreen">SplashScreenBree</string>
+    <string name="lukis_disini">Please Sign below ...</string>
+    <string name="view_signature">View</string>
+</resources>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:signature="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    
+    <LinearLayout
+        android:id="@+id/LinLay01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|top">
+
+    <ImageView
+        android:id="@+id/imgvwSignature"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="#ccc"
+        android:layout_margin="5dp"
+        android:layout_weight="1"/>
+
+        <ImageView
+        android:id="@+id/imgvwSignature0"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="#ccc"
+        android:layout_margin="5dp"
+        android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgvwSignature1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="#ccc"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgvwSignature2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="#ccc"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgvwSignature3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="#ccc"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/signature_pad_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginTop="85dp">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:text="@string/lukis_disini"
+        android:maxLength="30"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/canvas_sign"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="630dp"
+        android:layout_width="375dp" />
+        // buat linear atas ini aje cukup mestian
+        //android:layout_height="fill_parent"
+        //android:layout_width="fill_parent"
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@android:drawable/ic_menu_delete"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text="Save" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnViewSignature"
+            android:onClick="OnViewSignatureClick"
+            android:text="@string/view_signature"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
